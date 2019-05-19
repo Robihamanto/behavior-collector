@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textUserId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="UserId: "
+        android:textColor="#1989FF"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
+        android:layout_below="@id/textUserId"
+        android:layout_centerHorizontal="false"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Type: "
+        android:textColor="#1989FF"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textSession"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textType"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Session: "
+        android:textColor="#1989FF"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textVerticalView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_below="@id/textSession"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="2dp"
+        android:paddingTop="10dp"
+        android:text="Vertical View"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/buttonUpDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textVerticalView"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:text="Up-Down" />
+
+    <Button
+        android:id="@+id/buttonDownUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textVerticalView"
+        android:layout_centerHorizontal="false"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="15dp"
+        android:text="Down-Up" />
+
+    <TextView
+        android:id="@+id/textHorizontialView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonUpDown"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="2dp"
+        android:paddingTop="10dp"
+        android:text="Horizontal View"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/buttonLeftRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textHorizontialView"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:text="Left-Right" />
+
+    <Button
+        android:id="@+id/buttonRightLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textHorizontialView"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="15dp"
+        android:text="Right-Left" />
+
+    <TextView
+        android:id="@+id/textStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonLeftRight"
+        android:layout_below="@+id/buttonLeftRight"
+        android:layout_marginTop="17dp"
+        android:paddingLeft="2dp"
+        android:text="                 "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

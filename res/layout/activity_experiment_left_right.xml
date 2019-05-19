@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="107dp"
+        android:gravity="left" >
+
+        <TextView
+            android:id="@+id/textOriX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="X:"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/textOriY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textOriX"
+            android:text="Y:"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/textOriZ"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textOriY"
+            android:singleLine="true"
+            android:text="Z:" />
+
+        <TextView
+            android:id="@+id/textNumTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="NUMBER"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#006BDC"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/textOriZ"
+            android:background="#FFFFFF"
+            android:text="SESSION:1   FLICK:0"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#DC7100" />
+
+        <TextView
+            android:id="@+id/textSpecificNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textNumTitle"
+            android:layout_centerVertical="true"
+            android:text="00"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#006BDC"
+            android:textSize="50sp" />
+
+    </RelativeLayout>
+    
+    <com.example.cellphone_API4.HorizontialListView
+        android:id="@+id/horizontiallistview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+	>
+    </com.example.cellphone_API4.HorizontialListView>
+
+</LinearLayout>
